@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+body {
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.base-cartao {
+  background: #FAA900;
+  height: 300px;
+  width: 600px;
+  border-radius: 5px;
+  border: 1px solid #A67000;
+  transition: all 0.2s ease;
+}
+
+.base-cartao:hover {
+  transform: scale(1.5);
+}
+
+.base-cartao > .conteudo-cartao {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.base-cartao > .conteudo-cartao > .logo {
+  background-image: url("../imagens/logo.jpg");
+  background-size: cover;
+  height: 300px;
+  width: 300px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.base-cartao > .conteudo-cartao > .base-qrcode {
+  margin: 30px;
+}
+
+.base-cartao > .conteudo-cartao > .base-qrcode > .descricao {
+  color: white;
+  font-size: 10px;
+  font-family: "Segoe UI";
+  text-align: center;
+}
+
+.base-cartao > .conteudo-cartao > .base-qrcode > .redes-sociais > .rede-social {
+  display: flex;
+  justify-content: center;
+}
+
+.base-cartao > .conteudo-cartao > .base-qrcode > .redes-sociais > .rede-social > .nome {
+  color: #593b00;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  padding-left: 5px;
+  padding-top: 2px;
+}
+
+/*# sourceMappingURL=estilo.css.map */
