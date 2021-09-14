@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-.conteudo {
+.cartaoVisita {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,57 +14,50 @@ body {
   height: 100%;
   width: 100%;
 }
-
-.base-cartao {
+.cartaoVisita .corpo {
   background: #FAA900;
   height: 300px;
   width: 600px;
   border-radius: 5px;
   border: 1px solid #A67000;
   transition: all 0.2s ease;
+  cursor: pointer;
 }
-
-.base-cartao:hover {
-  transform: scale(1.5);
-}
-
-.base-cartao > .conteudo-cartao {
+.cartaoVisita .corpo .container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
-
-.base-cartao > .conteudo-cartao > .logo {
+.cartaoVisita .corpo .container .logo {
   background-image: url("../imagens/logo.jpg");
   background-size: cover;
   height: 300px;
   width: 300px;
   border-radius: 0px 5px 5px 0px;
 }
-
-.base-cartao > .conteudo-cartao > .base-qrcode {
+.cartaoVisita .corpo .qrcode {
   margin: 30px;
 }
-
-.base-cartao > .conteudo-cartao > .base-qrcode > .descricao {
+.cartaoVisita .corpo .qrcode .descricao {
   color: white;
   font-size: 10px;
   font-family: "Segoe UI";
   text-align: center;
 }
-
-.base-cartao > .conteudo-cartao > .base-qrcode > .redes-sociais > .rede-social {
+.cartaoVisita .corpo .qrcode .redes_sociais .rede_social {
   display: flex;
   justify-content: center;
 }
-
-.base-cartao > .conteudo-cartao > .base-qrcode > .redes-sociais > .rede-social > .nome {
+.cartaoVisita .corpo .qrcode .redes_sociais .rede_social .nome {
   color: #593b00;
   font-size: 15px;
   font-family: "Roboto", sans-serif;
   padding-left: 5px;
   padding-top: 2px;
+}
+.cartaoVisita .corpo:hover {
+  transform: scale(1.5);
 }
 
 /*# sourceMappingURL=estilo.css.map */
